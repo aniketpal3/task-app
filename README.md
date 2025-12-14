@@ -120,36 +120,7 @@ If multiple tasks have the same title in the same board:
 ---
 
 ## 📂 Project Structure
-
-```
-TASK-APP/
-│── node_modules/
-│── src/
-│   ├── components/
-│   │   ├── Board.jsx
-│   │   ├── Column.jsx
-│   │   ├── Filters.jsx
-│   │   ├── Navbar.jsx
-│   │   ├── TaskCard.jsx
-│   │   └── TaskModal.jsx
-│   │
-│   ├── data/
-│   │   └── tasks.json
-│   │
-│   ├── App.css
-│   ├── App.jsx
-│   ├── index.css
-│   └── main.jsx
-│
-│── .gitignore
-│── eslint.config.js
-│── index.html
-│── package.json
-│── package-lock.json
-│── vite.config.js
-│── README.md
-```
-
+![Previe](./Project_structure/Screenshot%202025-12-14%20183205.png)
 ---
 
 ## ▶️ Getting Started
