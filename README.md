@@ -154,7 +154,6 @@ TASK-APP/
 
 ```bash
 git clone https://github.com/your-username/task-app.git
-###
 cd task-app
 ```
 
