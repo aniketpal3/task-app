@@ -1,6 +1,6 @@
 # 🗂️ Task Management Web Application (TASK-APP)
 
-A **Kanban-style Task Management Web Application** inspired by **Trello / Notion Tasks**. This project is built with **React + Vite** and allows users to manage tasks across multiple boards with drag-and-drop, filtering, sorting, and persistent storage using **localStorage**.
+A **Task Management Web Application** inspired by **Trello / Notion Tasks**. This project is built with **React + Vite** and allows users to manage tasks across multiple boards with drag-and-drop, filtering, sorting, and persistent storage using **localStorage**.
 
 ---
 
@@ -27,7 +27,6 @@ Each task includes:
 * Description
 * Priority (Low / Medium / High)
 * Due Date
-* Creation Timestamp
 * Status (Board)
 
 #### ➕ Create Task
