@@ -2,11 +2,16 @@ import React from 'react'
 import { format } from 'date-fns'
 
 export default function TaskCard({ task, onEdit, onDelete, duplicate }) {
-  const due = task.dueDate ? format(new Date(task.dueDate), 'MMM d, yyyy') : 'No due'
+  const now = new Date()
+  const hasDue = !!task.dueDate
+  const dueDateObj = hasDue ? new Date(task.dueDate) : null
+  const isOverdue = hasDue && dueDateObj < now && task.status !== 'Completed'
+  const due = isOverdue ? 'Overdue' : (hasDue ? format(dueDateObj, 'MMM d, yyyy') : 'No due')
 
   return (
-    <div 
+    <div
       className={`task-card priority-${task.priority.toLowerCase()}`}
+      // draggable handled on wrapper in Board
     >
       <div className="task-card-top">
         <strong>{task.title}{duplicate ? ' • Duplicate' : ''}</strong>
@@ -14,7 +19,7 @@ export default function TaskCard({ task, onEdit, onDelete, duplicate }) {
       </div>
       <div className="task-desc">{task.description}</div>
       <div className="task-meta">
-        <span className="meta-label">Due:</span> {due}
+        <span className="meta-label">Due:</span> <span className={isOverdue ? 'overdue' : ''}>{due}</span>
       </div>
       <div className="task-actions">
         <button className="small" onClick={(e) => { e.stopPropagation(); onEdit(task); }}>Edit</button>
