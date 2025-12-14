@@ -5,7 +5,7 @@ A **Task Management Web Application** inspired by **Trello / Notion Tasks**. Thi
 ---
 ## Live Demo
        
-   👉 (https://task-app-delta-one.vercel.app/)
+   👉 https://task-app-delta-one.vercel.app/
 
 ## 🚀 Features
 
