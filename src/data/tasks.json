@@ -25,5 +25,32 @@
     "status": "Completed",
     "dueDate": "2025-01-30T09:00:00Z",
     "createdAt": "2025-01-28T08:00:00Z"
+  },
+  {
+    "id": 104,
+    "title": "Add New Task Feature",
+    "description": "Allow users to add new tasks using a modal or input form",
+    "priority": "Low",
+    "status": "To-Do",
+    "dueDate": "2025-12-27T09:00:00Z",
+    "createdAt": "2025-01-29T11:00:00Z"
+  },
+  {
+    "id": 105,
+    "title": "Implement Drag and Drop",
+    "description": "Enable drag-and-drop functionality to move tasks between boards smoothly",
+    "priority": "High",
+    "status": "In-Progress",
+    "dueDate": "2025-01-15T09:00:00Z",
+    "createdAt": "2025-01-26T16:20:00Z"
+  },
+  {
+    "id": 106,
+    "title": "Edit & Delete Tasks",
+    "description": "Implement options to update task details and remove tasks when completed",
+    "priority": "Medium",
+    "status": "Completed",
+    "dueDate": "2025-12-12T09:00:00Z",
+    "createdAt": "2025-01-24T13:45:00Z"
   }
 ]
